@@ -1,0 +1,263 @@
+/* General Page Layout */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #6a4c93, #2e2e8b);
+    color: white;
+    text-align: center;
+  }
+  
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+  }
+  
+  .hero .content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  
+  .hero .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .hero .buttons a {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar input, .search-bar select, .search-bar button {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .search-bar input {
+    padding-left: 35px;
+  }
+  
+  .search-bar input::placeholder {
+    color: #888;
+  }
+  
+  .search-bar button {
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #52318f;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 80px 0;
+    background-color: white;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .features p {
+    text-align: center;
+    color: #666;
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+  }
+  
+  .feature-card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+  }
+  
+  .feature-card svg {
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Featured Events Section */
+  .featured-events {
+    padding: 60px 0;
+    background-color: #f9fafb;
+  }
+  
+  .featured-events h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .featured-events .view-all {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #6a4c93;
+    transition: color 0.3s;
+  }
+  
+  .featured-events .view-all:hover {
+    color: #52318f;
+  }
+  
+  .featured-events .no-events {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .featured-events .no-events h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .featured-events .no-events p {
+    color: #888;
+  }
+  
+  .featured-events .no-events a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #6a4c93;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .featured-events .no-events a:hover {
+    background-color: #52318f;
+  }
+  
+  /* CTA Section */
+  .cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #008080, #2c7a6e);
+    color: white;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+  }
+  
+  .cta .buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cta .buttons a {
+    padding: 15px 30px;
+    background-color: white;
+    color: #008080;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cta .buttons a:hover {
+    background-color: #e2f0f1;
+  }
+  
+  .cta .buttons a.outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .cta .buttons a.outline:hover {
+    background-color: white;
+    color: #008080;
+  }
+  
